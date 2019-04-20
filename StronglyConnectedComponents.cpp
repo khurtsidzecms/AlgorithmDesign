@@ -47,20 +47,20 @@ void Graph::DFSViz(int v) {
 	}
 	if(path.top() == v) {
 		int m;
-    set<int> tmp;
+    		set<int> tmp;
 		if(!ccc[v]) {
-      tmp.insert(v);
-      ccc[v] = true;
-    }
-    while(v != scc.top()){
-      m = scc.top();
-      if(!ccc[m]) {
-        tmp.insert(m);
-        ccc[m] = true;
-      }
-      scc.pop();
-    }
-    Components.push_back(tmp);
+      			tmp.insert(v);
+      			ccc[v] = true;
+   		}
+		while(v != scc.top()){
+			m = scc.top();
+		 	if(!ccc[m]) {
+				tmp.insert(m);
+				ccc[m] = true;
+			}
+			scc.pop();
+		}
+		Components.push_back(tmp);
 		path.pop();
 	}
 }
