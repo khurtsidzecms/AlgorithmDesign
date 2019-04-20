@@ -14,7 +14,7 @@ class Graph {
 	stack<int> path;
 	bool *ccc;
 	int *preOrder;
-  vector< set<int> > Components;
+	vector< set<int> > Components;
 public:
 	Graph(int V);
 	void addEdge(int v, int w);
