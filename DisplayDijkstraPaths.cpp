@@ -30,9 +30,9 @@ void Graph::addEdge(int u, int v, int w)
 }
 void PathDisplay(int* p, int i) 
 {
-    if (p[i] != -1) {
-    	PathDisplay(p, p[i]); 
-    	cout << i << "  ";
+	if (p[i] != -1) {
+    		PathDisplay(p, p[i]); 
+    		cout << i << "  ";
 	}
 }
 void Graph::shortestPath(int src)
